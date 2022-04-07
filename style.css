@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.game-over{
+    text-align: center;
+    color: red;
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.dino{
+    width: 60px;
+    height: 60px;
+    background-image:url(assets/img/dino.png);
+    /*align-self: flex-end;*/
+    position:fixed;
+    bottom: 0%;
+}
+.cactus{
+    width: 60px;
+    height: 60px;
+    background-image:url(assets/img/cactus.png);
+    position: fixed;
+    bottom: 0%;
+}
+.homePage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(250, 196, 255);
+}
+#score,h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#level_1,h3{
+    text-align: center;
+    height: 185px;
+}
+#level_2,h4{
+    text-align: center;
+    height: 25%;
+    color: rgb(37, 35, 35);
+    margin-bottom: 185px;
+}
+#level_3,h5{
+    text-align: center;
+    height: 25%;
+    color: rgb(209, 46, 46);
+    margin-bottom: 33%;
+}
+@keyframes slideright{
+    from{
+        background-position: 70000%;
+    }
+    to{
+        background-position: 0;
+    }
+}
+.background{
+    position: absolute;
+    height: 200px;
+    /*bottom:0;*/
+    background-image: url(assets/img/background.png);
+    background-repeat: repeat-x;
+    animation: slideright 600s infinite linear;
+    width: 100%;
+}
+h1{
+    height: 100%;
+    height: 200px;
+}
